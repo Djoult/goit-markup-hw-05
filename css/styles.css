@@ -141,7 +141,7 @@ img {
   position: relative;
   color: var(--accent-color);
 }
-.menu-nav .link::after {
+.current::after {
   content: '';
   position: absolute;
   width: 100%;
