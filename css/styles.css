@@ -130,6 +130,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-nav .link:hover,
 .menu-nav .link:focus {
@@ -164,6 +165,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--phone-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon {
   margin-right: 10px;
@@ -370,6 +372,8 @@ img {
   display: block;
   background-color: transparent;
   color: var(--clients-logo-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .teammate-info .link:hover,
 .teammate-info .link:focus {
@@ -407,6 +411,7 @@ img {
   border: 1px solid var(--clients-logo-color);
   border-radius: 4px;
   color: var(--clients-logo-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list .link:hover,
 .clients-list .link:focus {
@@ -462,6 +467,8 @@ img {
   display: block;
   background-color: var(--footer-socials-bg-color);
   color: var(--primary-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-footer .link:hover,
 .socials-footer .link:focus {
@@ -496,6 +503,9 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-list .list-item:not(:first-child) {
   margin-left: 8px;
@@ -563,6 +573,7 @@ img {
 }
 .portfolio-list .list-item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list .list-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
