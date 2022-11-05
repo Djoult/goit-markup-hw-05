@@ -428,16 +428,6 @@ img {
 .teammate-info .social-icon {
   fill: currentColor;
 }
-/* .teammate-info .link {
-  stroke: var(--clients-logo-color);
-  color: transparent;
-}
-.teammate-info .link:hover,
-.teammate-info .link:focus {
-  stroke: var(--primary-color);
-  color: var(--accent-color);
-}
- */
 
 /* Clients */
 .clients-list {
@@ -456,12 +446,13 @@ img {
   border: 1px solid var(--clients-logo-color);
   border-radius: 4px;
   color: var(--clients-logo-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list .link:hover,
 .clients-list .link:focus {
   color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 .clients-logo {
   display: block;
@@ -612,9 +603,6 @@ img {
   padding: 20px 24px;
   border: 1px solid var(--examples-border-color);
   border-top: none;
-  /* border-right: 1px solid var(--examples-border-color);
-  border-left: 1px solid var(--examples-border-color);
-  border-bottom: 1px solid var(--examples-border-color); */
 }
 .portfolio-list .list-item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
@@ -624,9 +612,9 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.product-thumb:hover::before {
+/* .product-thumb:hover::before {
   opacity: 1;
-}
+} */
 .product-thumb {
   position: relative;
   width: 370px;
