@@ -21,6 +21,7 @@
   --examples-border-color: #eeeeee;
   --team-section-bg-color: #f5f4fa;
   --clients-logo-color: #afb1b8;
+  --activity-meta-color: rgba(47, 48, 58, 0.8);
   --close-border-color: rgba(0, 0, 0, 0.1);
   --data-modal-color: rgba(0, 0, 0, 0.2);
   --indent: 30px;
@@ -334,6 +335,29 @@ img {
 .activity-list > .list-item + .list-item,
 .team-list > .list-item + .list-item {
   margin-left: 30px;
+}
+.activity-thumb {
+  position: relative;
+}
+.activity-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--activity-meta-color);
+  width: 100%;
+  height: 70px;
+}
+.activity-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-color);
 }
 /* Team */
 .team.section {
