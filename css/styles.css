@@ -516,7 +516,7 @@ img {
 }
 .footer .container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 70px;
 }
 /* Portfolio */
@@ -527,10 +527,10 @@ img {
   justify-content: center;
   margin-bottom: 50px;
 }
-.socials-footer {
+/* .socials-footer {
   align-self: flex-start;
   margin-top: 12px;
-}
+} */
 .examples .button {
   padding: 6px 22px;
   font-weight: 500;
