@@ -340,9 +340,6 @@ img {
   position: relative;
 }
 .activity-meta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -351,6 +348,7 @@ img {
   height: 70px;
 }
 .activity-name {
+  position: absolute;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -358,6 +356,9 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* Team */
 .team.section {
